@@ -1,6 +1,7 @@
 ## Package progress - progress meters through a channel, wrapping an io.Reader
 
 [![Build Status](http://jenkins.hollensbe.org:8080/buildStatus/icon?job=progress-master)](http://jenkins.hollensbe.org:8080/job/progress-master/)
+[![GoDoc](https://godoc.org/github.com/box-builder/progress?status.svg)](https://godoc.org/github.com/box-builder/progress)
 
 ### Example:
 
