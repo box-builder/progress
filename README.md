@@ -7,7 +7,7 @@
 ```go
 func progress(reader io.Reader) {
 	r = NewReader("an_file.tar", reader, 100*time.Millisecond)
-	r.Close()
+	defer r.Close()
 
 	var count uint64
 	// This goroutine consumes the channel and concatenates the count to display
