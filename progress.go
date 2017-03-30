@@ -70,6 +70,7 @@ func (r *Reader) Read(buf []byte) (int, error) {
 	if time.Since(r.lastTime) > r.interval {
 		r.lastTime = time.Now()
 		r.C <- &Tick{Artifact: r.artifact, Time: r.lastTime, Value: r.value}
+		r.value = 0
 	}
 	return n, err
 }
